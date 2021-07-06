@@ -32,4 +32,9 @@ public class StudentController {
     public List<Student> getAll(){
         return studentRepository.findAll();
     }
+
+    @GetMapping("/version")
+    public String getVersion(){
+        return "version-1.0";
+    }
 }
